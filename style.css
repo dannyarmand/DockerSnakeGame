@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    position: relative;
+}
+
+
+#score {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#castle {
+    width: 150px;
+    height: 150px;
+    background-color: #d3b796;
+    position: absolute;
+    top: 250px;
+    left: 225px;
+    z-index: -1; /* Behind canvas */
+    border: 2px solid #000;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+}
+
+#turret-left,
+#turret-right {
+    width: 60px;
+    height: 120px;
+    background-color: #d3b796;
+    position: absolute;
+    top: 180px;
+    border: 2px solid #000;
+    z-index: 1;
+}
+
+#turret-left {
+    left: 180px;
+    border-radius: 10px 0 0 10px;
+}
+
+#turret-right {
+    right: 180px;
+    border-radius: 0 10px 10px 0;
+}
+
+#snake {
+    font-family: monospace;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

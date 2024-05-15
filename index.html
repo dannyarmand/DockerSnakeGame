@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="score" style="font-size: 20px; margin-bottom: 10px;">Score: 0</div>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div id="castle"></div>
+        <div id="turret-left"></div>
+        <div id="turret-right"></div>
+    </div>
+    <!-- ASCII art for snake -->
+    <pre id="snake">
+        Y
+      .-^-.
+     /     \      .- ~ ~ -.
+    ()     ()    /   _ _   `.                     _ _ _
+     \_   _/    /  /     \   \                . ~  _ _  ~ .
+       | |     /  /       \   \             .' .~       ~-. `.
+       | |    /  /         )   )           /  /             `.`.
+       \ \_ _/  /         /   /           /  /                `'
+        \_ _ _.'         /   /           (  (
+                        /   /             \  \
+                       /   /               \  \
+                      /   /                 )  )
+                     (   (                 /  /
+                      `.  `.             .'  /
+                        `.   ~ - - - - ~   .'
+                           ~ . _ _ _ _ . ~
+    </pre>
+    <script src="snake.js"></script>
+</body>
+</html>
